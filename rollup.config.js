@@ -60,7 +60,6 @@ export default {
             // Extract component CSS — better performance
             css: (css) => css.write(`bundle.css`),
             hot: isNollup,
-            sass: true,
             preprocess: [
                 autoPreprocess({
                     postcss: { plugins: [postcssImport(), autoprefixer()] },
