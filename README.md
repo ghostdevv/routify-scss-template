@@ -1,27 +1,18 @@
-# routify-starter
+# Routify SCSS
 
-Starter template for [Routify](https://github.com/sveltech/routify).
+To create your new project [degit](https://github.com/Rich-Harris/degit):
+```bash
+npx degit ghostdevv/routify-scss-template my-routify-app
+cd my-routify-app
+```
 
-### Get started
+# Setup
+```bash
+cd my-routify-app
+npm ci
+```
 
-#### Starter templates
-| Template                                  | Description                                                 |
-|-------------------------------------------|-------------------------------------------------------------|
-| [master](https://example.routify.dev/)    | Default template, includes examples folder                  |
-| [blog](https://blog-example.routify.dev/) | Generates a blog from local markdown posts. Includes mdsvex |
-| [auth](https://auth-example.routify.dev/) | Embedded login on protected pages. Includes Auth0           |
-
-To use a template, run:
-
-`npx @sveltech/routify init`
-
-or
-
-`npx @sveltech/routify init --branch <branch-name>`
-
-The above commands will populate the current directory, they don't create a new one.
-
-### npm scripts
+# Commands
 
 | Syntax           | Description                                                                       |
 |------------------|-----------------------------------------------------------------------------------|
@@ -52,16 +43,3 @@ See [src/pages/example/api/[showId].svelte](https://github.com/sveltech/routify-
 * For SPA or SSR apps please make sure that url rewrite is enabled on the server.
 * For SPA redirect to `__dynamic.html`.
 * For SSR redirect to the lambda function or express server.
-
-### Typescript
-
-For Typescript, we recommend [@lamualfa](https://github.com/lamualfa) excellent [routify-ts](https://github.com/lamualfa/routify-ts/)
-
-New project: `npx routify-ts init <project-name> [routify-init-args]`
-
-Existing project: `npx routify-ts convert [project-directory]`
-
-
-### Issues?
-
-File on Github! See https://github.com/sveltech/routify/issues .
